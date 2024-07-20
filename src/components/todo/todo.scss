@@ -1,0 +1,142 @@
+.todo{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+
+    background-color: #FFF7D1;
+
+    margin-bottom:5px ;
+    min-height: 90px;
+    cursor: pointer;
+}
+.todo:hover{
+    .todo__message-date{
+        display: block;
+    }
+}
+
+.todo__title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f8e89a;
+    font-size: 24px;
+    min-height: 56.4px;
+    font-weight: 600;
+    padding-right: 42px;
+    text-align: center;
+}
+.todo__title-inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    
+}
+.todo__title__check-mark{
+    padding-top: 5px;
+    padding-right: 5px;   
+    padding-left: 5px;
+}
+.todo__title-text{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+.todo__message{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    min-height: 150px;
+}
+.todo__btn{
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    background-color: #f8e89a;
+    border: none;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.todo__add-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.todo__title-edit{
+    font-family: "Roboto", sans-serif;
+    outline: none;
+    padding: 0;
+    border: none;
+    width: 100%;
+    background-color: inherit;
+    margin-left: 52px;
+}
+.todo__title-edit.todo__message{
+    text-align: start;
+    margin: 0;
+}
+.todo__message-date{
+    display: none;
+    opacity: 0.7;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 13px;
+}
+
+@media(max-width:900px){
+    .todo{
+        min-width: 100vw;
+    }
+}
+@media(max-width:650px){
+    .todo__title-text{
+        font-size: 20px;
+    }
+    .todo__message{
+        font-size: 16px;
+    }
+    .todo__img{
+        width: 38px;
+    }
+    .todo__message-date{
+        font-size: 11px;
+    }
+    
+}
+@media(max-width:560px){
+    .todo__img{
+        width: 34px;
+    }
+    .todo__title-text{
+        font-size: 18px;
+    }
+    .todo__message{
+        font-size: 14px;
+    }
+    
+}
+@media(max-width:500px){
+    .todo__img{
+        width: 28px;
+    }
+    .todo__title-text{
+        font-size: 14px;
+    }
+    .todo__message{
+        font-size: 12px;
+    }
+}

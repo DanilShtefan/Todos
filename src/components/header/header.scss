@@ -1,0 +1,43 @@
+.header__title{
+    text-align: center;
+}
+.header__inner{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.header__wrapper-btn{
+    cursor: pointer;
+    width: 100px;
+    height: 80px;
+    border: none;
+    background-color: white;
+}
+.header__wrapper-btn:hover{
+    background-color: #dadada;
+}
+.header__wrapper-input{
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 30px;
+}
+
+@media(max-width:650px){
+    .header__title{
+        font-size: 26px;
+    }
+}
+@media(max-width:500px){
+    .header__wrapper-input{
+        height: 20px;
+    }
+    .header__title{
+        font-size: 24px;
+    }
+    .header__options-btn{
+        width: 28px;
+    }
+    .header__add-btn{
+        width: 28px;
+    }
+}
